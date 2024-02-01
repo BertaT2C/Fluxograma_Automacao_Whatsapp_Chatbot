@@ -1,3 +1,3 @@
+A implementação da automação no WhatsApp tem como principal objetivo agilizar o serviço oferecido aos corretores, proporcionando um autosserviço repleto de informações e documentos que, de outra forma, seriam adquiridos de maneira morosa através de um portal convencional. Ao inserir os dados do segurado com apenas um clique, essa ferramenta traz enormes ganhos de tempo no atendimento. Além disso, oferece ao corretor a confiança de contar com uma plataforma interativa e eficaz, acessível via dispositivos móveis, eliminando a necessidade de acesso aos dados através de um portal.
 
-
-![74d759_fc98cdeb036041feba8fc37e514d1aae~mv2](https://github.com/BertaT2C/Fluxograma_Automacao_Whatsapp_Chatbot/assets/99225701/46e5c951-a0f8-48c5-b913-aadcbbc375e6)
+![construcao-legal](https://github.com/BertaT2C/Fluxograma_Automacao_Whatsapp_Chatbot/assets/99225701/14938dc2-5216-46d8-a5c7-0827f8b8e5d8)
