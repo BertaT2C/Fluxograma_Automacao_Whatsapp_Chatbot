@@ -1,4 +1,8 @@
-<p>Automação de Whatsapp (Canais digitais)</p>
+<!DOCTYPE html>
+<html>
+<head>
+<body> 
+<h1>Automação de Whatsapp (Canais digitais)</h1>
 
 <br><br>
 
@@ -6,3 +10,6 @@ A implementação da automação no WhatsApp tem como principal objetivo agiliza
 Neste projeto, será realizado o mapeamento atual (AS IS) das interações no WhatsApp, tanto do cliente quanto do corretor, utilizando a plataforma BIZAGI. O objetivo é identificar áreas de oportunidade para melhorias. Este processo de descoberta visa analisar minuciosamente como as comunicações estão ocorrendo atualmente em ambas as pontas, a fim de identificar pontos de dor e possíveis otimizações para aprimorar a experiência de ambas as partes envolvidas
 
 ![construcao-legal](https://github.com/BertaT2C/Fluxograma_Automacao_Whatsapp_Chatbot/assets/99225701/14938dc2-5216-46d8-a5c7-0827f8b8e5d8)
+
+  </body>
+  </html>
