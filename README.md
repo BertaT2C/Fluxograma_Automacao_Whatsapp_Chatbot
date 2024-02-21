@@ -28,6 +28,7 @@ A implementação da automação no WhatsApp tem como principal objetivo agiliza
 Neste projeto, será realizado o mapeamento atual (AS IS) das interações no WhatsApp, tanto do cliente quanto do corretor, utilizando a plataforma BIZAGI. O objetivo é identificar áreas de oportunidade para melhorias. Este processo de descoberta visa analisar minuciosamente como as comunicações estão ocorrendo atualmente em ambas as pontas, a fim de identificar pontos de dor e possíveis otimizações para aprimorar a experiência de ambas as partes envolvidas. A automação do WhatsApp desempenha um papel crucial nesse processo, permitindo uma comunicação mais rápida, eficiente e conveniente para todos os envolvidos.
 
 
+![Fluxo _AS IS_Whatsapp](https://github.com/BertaT2C/Fluxograma_Automacao_Whatsapp_Chatbot/assets/99225701/30c02780-a816-4a48-9896-a1e93f761825)
 
 
 ![construcao-legal](https://github.com/BertaT2C/Fluxograma_Automacao_Whatsapp_Chatbot/assets/99225701/14938dc2-5216-46d8-a5c7-0827f8b8e5d8)
