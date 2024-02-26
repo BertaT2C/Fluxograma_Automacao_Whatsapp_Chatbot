@@ -2,7 +2,7 @@
 <html>
 <head>
 <body> 
-<h1>Automação de Whatsapp (Canais digitais)</h1>
+<h1>Automação de Whatsapp de empresa de seguros(Canais digitais)</h1>
 <br>
 A automação do WhatsApp é de extrema importância para as empresas por diversos motivos:
 
