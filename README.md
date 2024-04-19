@@ -6,9 +6,17 @@
 
 ![WhatsappGIF (2)](https://github.com/BertaT2C/Fluxograma_Automacao_Whatsapp_Chatbot/assets/99225701/bbb4915a-70df-40ec-8f04-1cbc031fba01)
 
+## **🚨 Aviso Importante: Todas as informações contidas nos projetos deste repositório são fictícias e foram criadas exclusivamente para fins de demonstração ou simulação.** 
 <br>
-A automação do WhatsApp é de extrema importância para as empresas por diversos motivos:
+Os dados contidos neste projeto foram capturados de um chatbot público que não possuía restrições de acesso.
+Estes dados foram utilizados exclusivamente para fins de demonstração e desenvolvimento, e não representam informações reais de empresas, organizações ou indivíduos. Quaisquer semelhanças com dados reais são puramente coincidência.
+Este projeto foi desenvolvido com o objetivo de demonstrar habilidades técnicas e práticas de programação, utilizando dados fictícios para simular interações com um chatbot. Nenhuma informação sensível ou real foi utilizada neste projeto.
+Por favor, tenha em mente que os dados contidos neste projeto são fictícios e não devem ser utilizados para qualquer outro propósito além de fins educacionais e de demonstração. 
 
+
+<br><br>
+
+#### <h1>**A automação do WhatsApp é de extrema importância para as empresas por diversos motivos:**</h1>
 
 Eficiência Operacional: A automação permite que as empresas realizem tarefas de atendimento ao cliente, marketing e vendas de forma mais eficiente, reduzindo o tempo e os recursos necessários para concluir essas atividades.
 
