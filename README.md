@@ -2,7 +2,7 @@
 <html>
 <head>
 <body> 
-<h1>Automação de Whatsapp para corretores de seguros (Canais digitais)</h1>
+<h1>Automação de Whatsapp para seguros de autos e residenciais (Canais digitais)</h1>
 
 ![WhatsappGIF (2)](https://github.com/BertaT2C/Fluxograma_Automacao_Whatsapp_Chatbot/assets/99225701/bbb4915a-70df-40ec-8f04-1cbc031fba01)
 
