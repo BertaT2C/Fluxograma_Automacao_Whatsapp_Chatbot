@@ -5,9 +5,9 @@
 Organize **7 frames horizontais**, com títulos e cores consistentes:
 
 1. **Visão executiva:** problema, públicos (cliente e corretor), hipótese de solução, premissas e escopo.
-2. **AS IS:** usuário precisa de informação → portal/central → autenticação → busca → encontra ou repete contato com atendente; dores: atrito, demora, retrabalho.
+2. **AS IS:** corretor inicia pelo WhatsApp → menu de produtos/serviços → escolha da solicitação → instrução ou link para site/portal, link rápido ou atendimento humano → conclusão ou novo contato. O WhatsApp já existe, mas parte da resolução ocorre fora da conversa.
 3. **Oportunidades:** autosserviço, autenticação por risco, recuperação de contexto, disponibilidade, rastreabilidade.
-4. **TO BE:** WhatsApp → identificação da intenção → autenticação (quando exigida) → serviço → confirmação ou transbordo → CSAT.
+4. **TO BE:** corretor permanece entrando pelo WhatsApp → identificação da intenção → verificação de elegibilidade para automação → autenticação (quando exigida) → consulta/serviço automatizado no próprio WhatsApp quando viável → confirmação ou direcionamento ao portal/atendente. Evolução em fases, sem pressupor automação total.
 5. **MVP e backlog:** menu, consulta, documentos permitidos, erros de integração, transbordo, eventos e métricas.
 6. **KPIs percentuais simulados:** 20% → 55% de autosserviço; 72% → 85% CSAT; 28% → 15% abandono; 80% → 45% de encaminhamento humano.
 7. **Benefícios e riscos:** +35 p.p. em autosserviço, +13 p.p. em CSAT e -13 p.p. em abandono, todos fictícios; LGPD; segurança; integrações; acessibilidade.
