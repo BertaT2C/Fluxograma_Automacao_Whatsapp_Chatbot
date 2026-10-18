@@ -1,32 +1,28 @@
-# Roteiro de board no Miro — Estudo de caso WhatsApp
+# Roteiro do Miro — Case demonstrativo WhatsApp
 
-**Objetivo:** visualizar a análise AS IS, hipóteses de fricção e proposta conceitual TO BE sem confundir diagnóstico com solução implantada.
+> Todos os números são fictícios; o quadro deve ser marcado como **SIMULAÇÃO / PORTFÓLIO**.
 
-## Colunas sugeridas (esquerda → direita)
+Organize **7 frames horizontais**, com títulos e cores consistentes:
 
-1. **Contexto e objetivo** — público-alvo, necessidade, limites do estudo.
-2. **Jornada AS IS** — inserir diagrama exportado do Bizagi; listar passos e pontos de decisão.
-3. **Hipóteses de dor** — etiquetas de pontos a validar (troca de canal, repetição de dados, falta de orientação, transferência humana).
-4. **Oportunidades** — cartões de soluções possíveis, riscos e dependências.
-5. **TO BE conceitual** — entrada no WhatsApp → escolha de necessidade → orientação/autosserviço → decisão “resolvido?” → conclusão ou encaminhamento.
-6. **Backlog inicial** — HU-01 a HU-04 (ver arquivo de backlog).
-7. **Indicadores propostos** — resolução, transferência, tempo, abandono e satisfação.
-8. **Pendências de validação** — regras, integrações, segurança, métricas de linha de base e revisões com especialistas.
+1. **Visão executiva:** problema, públicos (cliente e corretor), hipótese de solução, premissas e escopo.
+2. **AS IS:** usuário precisa de informação → portal/central → autenticação → busca → encontra ou repete contato com atendente; dores: atrito, demora, retrabalho.
+3. **Oportunidades:** autosserviço, autenticação por risco, recuperação de contexto, disponibilidade, rastreabilidade.
+4. **TO BE:** WhatsApp → identificação da intenção → autenticação (quando exigida) → serviço → confirmação ou transbordo → CSAT.
+5. **MVP e backlog:** menu, consulta, documentos permitidos, erros de integração, transbordo, eventos e métricas.
+6. **KPIs simulados:** 20% → 55% de autosserviço; 8min → 20s de primeira resposta; 72% → 85% CSAT; 28% → 15% abandono.
+7. **Benefícios e riscos:** ganho bruto ilustrativo R$ 28 mil/mês, sujeito a validação; custos omitidos; LGPD; segurança; integração; acessibilidade.
 
-## Convenção visual
+## Apresentação sugerida (3 minutos)
 
-- **Azul:** fatos observados/documentados.
-- **Amarelo:** hipóteses a investigar.
-- **Verde:** melhorias propostas.
-- **Cinza:** itens pendentes de confirmação.
-- **Vermelho:** riscos de privacidade, segurança ou dependências externas.
+- 30s: problema e contexto.
+- 40s: diagnóstico AS IS e dores.
+- 50s: desenho TO BE e decisões de produto.
+- 40s: definição do MVP.
+- 20s: KPIs e limites das estimativas.
 
-## Fluxo conceitual a desenhar
+## Antes de compartilhar
 
-Início → Menu de necessidades → Categoria selecionada → Orientação ou coleta mínima → Verificação de segurança (quando aplicável) → Resolvido? → Sim: conclusão; Não: encaminhamento humano → Encerramento/continuidade.
-
-> O diagrama original do Bizagi deve ser revisto quanto a informações internas e marcas antes de ser colocado em um board público.
-
-## Compartilhamento no portfólio
-
-Após criar um board com conteúdo sanitizado e revisar as permissões, copie o link de visualização e acrescente-o ao README do GitHub na seção Artefatos. Confira se um recrutador consegue abrir o link sem solicitar acesso. Se não for possível tornar o quadro público com segurança, publique uma exportação em imagem/PDF no repositório em vez de abrir o board integral.
+- Substituir exemplos com marcas reais por dados fictícios e neutros.
+- Revisar confidencialidade e imagens anexadas.
+- Confirmar que o quadro está acessível a recrutadores com permissão de visualização.
+- Inserir o endereço público do Miro no README **apenas depois de validar o acesso**.
