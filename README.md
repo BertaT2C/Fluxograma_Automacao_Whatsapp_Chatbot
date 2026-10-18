@@ -122,9 +122,13 @@ O roteiro proposto contempla **Visão Executiva → AS IS → Dores → TO BE �
 
 **Link do quadro Miro:** *a incluir após criação e validação de compartilhamento*. Não existe um quadro público confirmado neste repositório.
 
-## 9. Material original
+## 9. Mapeamento detalhado preservado
 
-O repositório preserva o arquivo histórico [Fluxo Cliente_Corretor Bradesco.png](Fluxo%20Cliente_Corretor%20Bradesco.png), e o case reorganizado acima foi propositalmente **anonimizado e apresentado como cenário fictício**. Referências, marcas e fluxos do material histórico não devem ser entendidos como endosso ou divulgação autorizada de dados de empresas reais. Recomenda-se revisar o arquivo antes de promovê-lo em materiais públicos.
+O repositório preserva o fluxograma detalhado de atendimento de clientes e corretores de seguros, agora disponível como [Fluxo Cliente_Corretor de seguros.png](Fluxo%20Cliente_Corretor%20de%20seguros.png).
+
+![Fluxograma detalhado de atendimento de clientes e corretores de seguros](Fluxo%20Cliente_Corretor%20de%20seguros.png)
+
+O case apresentado neste README utiliza **cenário e indicadores fictícios para fins de portfólio**. O material visual foi mantido como referência de mapeamento; recomenda-se revisar eventuais nomes, marcas e informações sensíveis antes de compartilhar o projeto publicamente.
 
 ---
 
