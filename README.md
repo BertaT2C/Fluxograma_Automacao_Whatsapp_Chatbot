@@ -1,49 +1,131 @@
-<!DOCTYPE html>
-<html>
-<head>
-<body> 
-<h1>Automação de Whatsapp para seguros de autos e residenciais (Canais digitais)</h1>
+# Case de Portfólio | Automação de atendimento pelo WhatsApp
 
-![WhatsappGIF (2)](https://github.com/BertaT2C/Fluxograma_Automacao_Whatsapp_Chatbot/assets/99225701/bbb4915a-70df-40ec-8f04-1cbc031fba01)
+**Análise de Negócios • Descoberta de processos • Jornada do usuário • Requisitos • Indicadores**
 
-## **🚨 Aviso Importante: Todas as informações contidas nos projetos deste repositório são fictícias e foram criadas exclusivamente para fins de demonstração ou simulação.** 
-<br>
-Os dados contidos neste projeto foram capturados de um chatbot público que não possuía restrições de acesso.
-Estes dados foram utilizados exclusivamente para fins de demonstração e desenvolvimento, e não representam informações reais de empresas, organizações ou indivíduos. Quaisquer semelhanças com dados reais são puramente coincidência.
-Este projeto foi desenvolvido com o objetivo de demonstrar habilidades técnicas e práticas de programação, utilizando dados fictícios para simular interações com um chatbot. Nenhuma informação sensível ou real foi utilizada neste projeto.
-Por favor, tenha em mente que os dados contidos neste projeto são fictícios e não devem ser utilizados para qualquer outro propósito além de fins educacionais e de demonstração. 
+> **PROJETO DEMONSTRATIVO — DADOS FICTÍCIOS.** Este estudo de caso foi estruturado para demonstrar competências profissionais. Os indicadores, volumes, metas e resultados abaixo são **simulações**, não números obtidos em produção nem resultados comprovados de cliente. Não se trata de implantação em ambiente real.
 
+## 1. Visão executiva
 
-<br><br>
+**Cenário:** uma seguradora fictícia deseja oferecer autosserviço via WhatsApp a clientes e corretores, reduzindo a dependência de um portal web para consultas e solicitações recorrentes.
 
-#### <h1>**A automação do WhatsApp é de extrema importância para as empresas por diversos motivos:**</h1>
+**Desafio de negócio:** jornadas fragmentadas, necessidade de múltiplos acessos, demora para informações simples e baixa visibilidade sobre motivos de contato.
 
-Eficiência Operacional: A automação permite que as empresas realizem tarefas de atendimento ao cliente, marketing e vendas de forma mais eficiente, reduzindo o tempo e os recursos necessários para concluir essas atividades.
+**Proposta (TO BE):** atendimento conversacional com menus orientados à intenção, validação de identidade, integração controlada a serviços, consulta de status, envio de documentos permitidos e transbordo para atendimento humano com contexto preservado.
 
-## 1)Melhoria da Experiência do Cliente
-Ao automatizar processos de atendimento ao cliente, as empresas podem oferecer respostas rápidas e personalizadas, melhorando a experiência do cliente e fortalecendo o relacionamento com eles.
+**Papel ilustrado neste portfólio:** descoberta e mapeamento de processo, identificação de dores, desenho de jornada futura, especificação de requisitos, definição de KPIs e critérios de aceite. Este repositório **não contém um chatbot implementado**.
 
-## 2)Escala e Alcance
-A automação permite que as empresas atinjam um maior número de clientes de forma simultânea, escalando suas operações de atendimento e marketing para um público mais amplo.
+## 2. Objetivos e benefícios esperados
 
-## 3)Redução de Erros
-A automação reduz a probabilidade de erros humanos em tarefas repetitivas, garantindo maior precisão e consistência nas interações com os clientes.
+| Objetivo | Benefício potencial | Como verificar |
+| --- | --- | --- |
+| Facilitar autosserviço | Menos esforço para obter informações | Taxa de resolução sem agente |
+| Diminuir espera | Resposta inicial rápida | Tempo da primeira resposta |
+| Otimizar operação | Menos contatos repetitivos direcionados a agentes | Volume e custo por atendimento |
+| Melhorar experiência | Jornadas simples e consistentes | CSAT após encerramento |
+| Aumentar rastreabilidade | Melhor análise de gargalos e falhas | Logs de etapas e taxa de abandono |
+| Preservar segurança | Reduzir exposição de dados sensíveis | Auditoria de acessos e consentimento |
 
-## 4) Disponibilidade 24/7
-Com a automação, as empresas podem oferecer suporte e assistência aos clientes 24 horas por dia, 7 dias por semana, mesmo fora do horário comercial, melhorando a conveniência e a acessibilidade para os clientes.
+## 3. Jornada atual e futura
 
-## 5) Análise e Insights
-As plataformas de automação do WhatsApp geralmente incluem recursos de análise e relatórios que permitem às empresas rastrear o desempenho de suas campanhas e entender melhor o comportamento dos clientes.
-#
-A implementação da automação no WhatsApp tem como principal objetivo agilizar o serviço oferecido aos corretores, proporcionando um autosserviço repleto de informações e documentos que, de outra forma, seriam adquiridos de maneira morosa através de um portal convencional. Ao inserir os dados do segurado com apenas um clique, essa ferramenta traz enormes ganhos de tempo no atendimento, além de oferecer ao corretor a confiança de contar com uma plataforma interativa e eficaz, acessível via dispositivos móveis, eliminando a necessidade de acesso aos dados através de um portal.
+### AS IS — hipótese de processo
 
-Neste projeto, será realizado o mapeamento atual (AS IS) das interações no WhatsApp, tanto do cliente quanto do corretor, utilizando a plataforma BIZAGI. O objetivo é identificar áreas de oportunidade para melhorias. Este processo de descoberta visa analisar minuciosamente como as comunicações estão ocorrendo atualmente em ambas as pontas, a fim de identificar pontos de dor e possíveis otimizações para aprimorar a experiência de ambas as partes envolvidas. A automação do WhatsApp desempenha um papel crucial nesse processo, permitindo uma comunicação mais rápida, eficiente e conveniente para todos os envolvidos.
+```mermaid
+flowchart LR
+  A[Cliente ou corretor precisa de informação] --> B[Acessa portal ou central]
+  B --> C[Busca opção e se autentica]
+  C --> D{Encontrou a informação?}
+  D -->|Sim| E[Conclui solicitação]
+  D -->|Não| F[Abre contato com atendente]
+  F --> G[Repete contexto e aguarda]
+  G --> E
+```
 
+### TO BE — proposta demonstrativa
 
-![Fluxo _AS IS_Whatsapp](https://github.com/BertaT2C/Fluxograma_Automacao_Whatsapp_Chatbot/assets/99225701/30c02780-a816-4a48-9896-a1e93f761825)
+```mermaid
+flowchart LR
+  A[Início no WhatsApp] --> B[Menu de intenções]
+  B --> C{Tipo de solicitação}
+  C -->|Consulta| D[Validar identidade quando necessário]
+  C -->|Documento| D
+  C -->|Ajuda humana| H[Transbordo com contexto]
+  D --> E{Serviço disponível?}
+  E -->|Sim| F[Consulta/retorno seguro]
+  E -->|Não| H
+  F --> I[Confirmação e pesquisa de satisfação]
+  H --> I
+```
 
+**Cuidados de desenho:** consentimento e privacidade (LGPD), acessibilidade da linguagem, alternativas de navegação, tratamento de falhas de integração, proteção de dados, encaminhamento a atendimento humano e registro auditável.
 
-![construcao-legal](https://github.com/BertaT2C/Fluxograma_Automacao_Whatsapp_Chatbot/assets/99225701/14938dc2-5216-46d8-a5c7-0827f8b8e5d8)
+## 4. Escopo do MVP proposto
 
-  </body>
-  </html>
+- Menu inicial orientado a necessidades frequentes.
+- Identificação contextual de cliente ou corretor.
+- Autenticação proporcional ao risco da informação solicitada.
+- Consulta de andamento de solicitações e de documentos não sensíveis, conforme autorização.
+- Transferência para atendimento humano quando houver falha ou intenção não atendida.
+- Captura de eventos e painel básico de indicadores.
+
+**Fora do MVP:** contratação de seguro integral pelo chat, pagamentos, alteração de dados críticos sem autenticação robusta e automações sem integrações autorizadas.
+
+## 5. Backlog e critérios de aceite
+
+Veja [histórias de usuário e critérios de aceite ilustrativos](docs/backlog-ilustrativo.md).
+
+Exemplo:
+
+**HU-01 — Como corretor, quero consultar o andamento de uma solicitação pelo WhatsApp, para não precisar acessar diferentes canais.**
+
+- **Dado** que o usuário esteja autenticado e autorizado, **quando** informar uma referência válida, **então** o sistema deverá exibir o status permitido.
+- **Dado** que o serviço de consulta esteja indisponível, **quando** houver falha técnica, **então** o sistema deverá informar a indisponibilidade sem exibir dados internos e oferecer atendimento humano.
+- **Dado** um usuário sem permissão, **quando** consultar uma referência, **então** nenhuma informação protegida deverá ser exibida.
+
+## 6. Painel de indicadores — SIMULAÇÃO
+
+**Cenário inventado para apresentação do projeto:** comparação de uma linha de base hipotética com metas de um piloto futuro. **Não são medições de uma seguradora.**
+
+| Indicador | Linha de base simulada | Meta simulada do MVP | Interpretação |
+| --- | ---: | ---: | --- |
+| Contatos mensais | 10.000 | 10.000 | Volume constante para comparação |
+| Resolução no autosserviço | 20% | 55% | +35 pontos percentuais |
+| Tempo médio de primeira resposta | 8 min | 20 s | Aceleração estimada |
+| CSAT | 72% | 85% | +13 pontos percentuais |
+| Abandono da jornada | 28% | 15% | -13 pontos percentuais |
+| Contatos direcionados ao humano | 8.000 | 4.500 | -3.500/mês (cenário simplificado) |
+
+### Exemplo didático de benefício financeiro
+
+Se **3.500 atendimentos por mês** fossem evitados e o custo médio **hipotético** de um atendimento humano fosse **R$ 8,00**, o benefício bruto potencial seria:
+
+**3.500 × R$ 8,00 = R$ 28.000/mês**, antes dos custos de plataforma, desenvolvimento, licenças, manutenção, integrações e atendimento residual. **Não representa economia real comprovada.** A análise correta de ROI deve considerar custos totais, sazonalidade, demanda induzida e qualidade do serviço.
+
+![Indicadores simulados do projeto](docs/painel-indicadores.svg)
+
+Detalhamento: [dicionário de métricas e fórmulas](docs/indicadores-simulados.md).
+
+## 7. Como medir corretamente em um piloto real
+
+1. Estabelecer linha de base com período, canal, público e volume comparáveis.
+2. Instrumentar eventos: início de conversa, intenção, autenticação, sucesso, falha, transbordo e satisfação.
+3. Acompanhar indicadores por jornada e por perfil (cliente/corretor).
+4. Confrontar ganho operacional com CSAT, abandono e problemas de qualidade.
+5. Validar resultado com responsáveis de negócio, operação, tecnologia e privacidade.
+
+## 8. Demonstração visual no Miro
+
+O roteiro proposto contempla **Visão Executiva → AS IS → Dores → TO BE → MVP/Backlog → Indicadores → Benefícios/Riscos**.
+
+- [Roteiro do quadro Miro](docs/roteiro-miro.md)
+- [Painel de indicadores simulados](docs/painel-indicadores.svg)
+- [Dicionário de indicadores](docs/indicadores-simulados.md)
+
+**Link do quadro Miro:** *a incluir após criação e validação de compartilhamento*. Não existe um quadro público confirmado neste repositório.
+
+## 9. Material original
+
+O repositório preserva o arquivo histórico [Fluxo Cliente_Corretor Bradesco.png](Fluxo%20Cliente_Corretor%20Bradesco.png), e o case reorganizado acima foi propositalmente **anonimizado e apresentado como cenário fictício**. Referências, marcas e fluxos do material histórico não devem ser entendidos como endosso ou divulgação autorizada de dados de empresas reais. Recomenda-se revisar o arquivo antes de promovê-lo em materiais públicos.
+
+---
+
+**Competências demonstradas:** análise de negócio · descoberta · mapeamento AS IS/TO BE · experiência do usuário · requisitos · histórias de usuário · critérios de aceite · priorização · indicadores · mensuração de benefícios · comunicação com stakeholders.
