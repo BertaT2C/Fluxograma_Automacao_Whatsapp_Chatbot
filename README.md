@@ -6,11 +6,11 @@
 
 ## 1. Visão executiva
 
-**Cenário:** uma seguradora fictícia deseja oferecer autosserviço via WhatsApp a clientes e corretores, reduzindo a dependência de um portal web para consultas e solicitações recorrentes.
+**Cenário:** uma seguradora fictícia já utiliza o WhatsApp como porta de entrada para orientação de clientes e corretores, mas parte das solicitações é direcionada ao site/portal ou ao atendimento humano.
 
 **Desafio de negócio:** jornadas fragmentadas, necessidade de múltiplos acessos, demora para informações simples e baixa visibilidade sobre motivos de contato.
 
-**Proposta (TO BE):** atendimento conversacional com menus orientados à intenção, validação de identidade, integração controlada a serviços, consulta de status, envio de documentos permitidos e transbordo para atendimento humano com contexto preservado.
+**Proposta (TO BE):** evolução incremental do WhatsApp existente, automatizando gradualmente consultas e solicitações elegíveis, com validação de identidade quando necessária, integrações autorizadas e alternativas de portal ou atendimento humano.
 
 **Papel ilustrado neste portfólio:** descoberta e mapeamento de processo, identificação de dores, desenho de jornada futura, especificação de requisitos, definição de KPIs e critérios de aceite. Este repositório **não contém um chatbot implementado**.
 
@@ -27,36 +27,58 @@
 
 ## 3. Jornada atual e futura
 
-### AS IS — hipótese de processo
+O **WhatsApp já é o canal de entrada** da jornada do corretor. A evolução proposta **não consiste em criar esse canal**, mas em ampliar gradualmente o autosserviço dentro dele, diminuindo a necessidade de sair da conversa para concluir solicitações recorrentes.
+
+### AS IS — jornada atual mapeada
+
+O corretor inicia a conversa no WhatsApp, navega pelo menu de produtos e serviços e escolhe uma necessidade, como **segunda via de boleto, consultas de apólices, pagamentos ou acompanhamento de propostas**. Em parte dos caminhos, recebe uma instrução ou um link para continuar a solicitação no **site/portal**, utiliza um **link rápido** ou solicita **atendimento humano**. O WhatsApp orienta e direciona, mas nem sempre executa a solicitação até o fim.
 
 ```mermaid
 flowchart LR
-  A[Cliente ou corretor precisa de informação] --> B[Acessa portal ou central]
-  B --> C[Busca opção e se autentica]
-  C --> D{Encontrou a informação?}
-  D -->|Sim| E[Conclui solicitação]
-  D -->|Não| F[Abre contato com atendente]
-  F --> G[Repete contexto e aguarda]
-  G --> E
+  A["Corretor inicia pelo WhatsApp"] --> B["Recebe menu de produtos e serviços"]
+  B --> C["Seleciona o assunto"]
+  C --> D{"Como continuar?"}
+  D -->|"Site/portal"| E["Recebe orientação ou link"]
+  E --> F["Acessa portal e realiza etapas externas"]
+  D -->|"Link rápido"| G["Acessa o link indicado"]
+  D -->|"Atendente"| H["Solicita atendimento humano"]
+  F --> I{"Solicitação resolvida?"}
+  G --> I
+  H --> J["Continua com suporte humano"]
+  I -->|"Sim"| K["Finaliza"]
+  I -->|"Não"| J
+  J --> K
 ```
 
-### TO BE — proposta demonstrativa
+**Oportunidades de melhoria:** redirecionamentos para outros canais, necessidade de repetir etapas, dependência de suporte humano em situações recorrentes e pouca continuidade de contexto entre WhatsApp e portal. São **oportunidades identificadas para análise**, não indicadores quantitativos comprovados.
+
+### TO BE — automação parcial e incremental proposta
+
+O corretor **continua entrando pelo WhatsApp**, mas as solicitações elegíveis passam, gradualmente, a ser atendidas **dentro da conversa**. O chatbot identifica a intenção, solicita apenas dados indispensáveis, valida identidade e autorização quando necessário e consulta serviços integrados **se houver viabilidade técnica e aprovação de segurança**. Casos não elegíveis, indisponibilidade de integração ou necessidade de intervenção permanecem direcionados ao portal ou ao atendimento humano.
 
 ```mermaid
 flowchart LR
-  A[Início no WhatsApp] --> B[Menu de intenções]
-  B --> C{Tipo de solicitação}
-  C -->|Consulta| D[Validar identidade quando necessário]
-  C -->|Documento| D
-  C -->|Ajuda humana| H[Transbordo com contexto]
-  D --> E{Serviço disponível?}
-  E -->|Sim| F[Consulta/retorno seguro]
-  E -->|Não| H
-  F --> I[Confirmação e pesquisa de satisfação]
+  A["Corretor inicia pelo WhatsApp"] --> B["Bot identifica intenção e apresenta menu"]
+  B --> C["Seleciona solicitação"]
+  C --> D{"Elegível para automação nesta fase?"}
+  D -->|"Sim"| E["Valida dados e autorização quando exigidos"]
+  E --> F{"Integração autorizada e disponível?"}
+  F -->|"Sim"| G["Executa consulta ou serviço no WhatsApp"]
+  F -->|"Não"| H["Direciona ao portal ou atendente"]
+  D -->|"Não"| H
+  G --> I["Confirma resultado e oferece nova opção"]
   H --> I
+  I --> J["Voltar ao menu ou finalizar"]
 ```
 
-**Cuidados de desenho:** consentimento e privacidade (LGPD), acessibilidade da linguagem, alternativas de navegação, tratamento de falhas de integração, proteção de dados, encaminhamento a atendimento humano e registro auditável.
+**Evolução por etapas (proposta):**
+1. **Fase 1:** melhoria dos menus, mensagens, classificação das intenções e links direcionados.
+2. **Fase 2:** automação de consultas frequentes e solicitações elegíveis, condicionada às integrações e autorizações necessárias.
+3. **Fase 3:** ampliação gradual do autosserviço, com acompanhamento dos indicadores e ajustes de jornada.
+
+**Cuidados de desenho:** consentimento e privacidade (LGPD), autenticação proporcional ao risco, rastreabilidade, segurança das integrações, acessibilidade, tratamento de falhas e transbordo para atendimento humano.
+
+**Mapeamento detalhado preservado:** o desenho original do fluxo de clientes e corretores permanece disponível na [seção 9](#9-mapeamento-detalhado-preservado). Os diagramas acima são **sínteses de portfólio** e não substituem suas regras e ramificações originais.
 
 ## 4. Escopo do MVP proposto
 
