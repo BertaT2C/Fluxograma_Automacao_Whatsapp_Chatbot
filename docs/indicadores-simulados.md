@@ -1,33 +1,33 @@
-# Indicadores de desempenho — cenário 100% simulado
+# Indicadores percentuais — cenário totalmente simulado
 
-> **Atenção:** todos os valores desta página são inventados para demonstração profissional e não têm origem em sistemas produtivos.
+> **DADOS FICTÍCIOS:** índices usados exclusivamente para demonstrar análise de negócio e acompanhamento de desempenho. Não são medições de produção ou resultados alcançados em empresa real.
 
-| KPI | Definição / fórmula | Baseline hipotético | Meta hipotética | Fonte necessária em um piloto real |
-| --- | --- | --- | --- | --- |
-| Resolução em autosserviço | Conversas encerradas com sucesso sem atendimento humano / conversas elegíveis × 100 | 20% | 55% | Eventos do chatbot + CRM |
-| Tempo até primeira resposta | Média ou percentil do tempo entre mensagem inicial e primeira resposta útil | 8 min | 20 s | Logs com timestamps |
-| CSAT | Respostas satisfeitas / total de respostas válidas × 100 | 72% | 85% | Pesquisa ao término |
-| Abandono da jornada | Jornadas iniciadas sem conclusão e sem transbordo / jornadas iniciadas × 100 | 28% | 15% | Funil de eventos |
-| Volume para equipe humana | Contatos mensais × (1 - taxa de autosserviço) | 8.000 | 4.500 | CRM + chatbot |
+| KPI percentual | Definição / fórmula | Cenário inicial simulado | Meta simulada | Como medir em piloto real |
+| --- | --- | ---: | ---: | --- |
+| Resolução por autosserviço | Demandas resolvidas sem atendente ÷ demandas elegíveis × 100 | 20% | 55% | Eventos de jornada, integrações e registro de resolução |
+| CSAT | Respostas positivas ÷ total de respostas válidas × 100 | 72% | 85% | Pesquisa ao fim do atendimento |
+| Abandono da jornada | Jornadas iniciadas sem resolução e sem transbordo ÷ jornadas iniciadas × 100 | 28% | 15% | Funil de eventos e definição clara de abandono |
+| Encaminhamento humano | Demandas encaminhadas para atendimento humano ÷ demandas elegíveis × 100 | 80% | 45% | Classificação de encerramento e transbordo |
 
-## Simulação econômica
+## Evolução percentual hipotética
 
-- Volume considerado: 10.000 contatos/mês.
-- Baseline: 20% resolvidos automaticamente → 8.000 enviados a humano.
-- Meta: 55% resolvidos automaticamente → 4.500 enviados a humano.
-- Diferença: **3.500 atendimentos por mês**.
-- Custo unitário **hipotético**: R$ 8,00 por atendimento.
-- Benefício bruto ilustrativo: **R$ 28.000/mês**.
-- Projeção anual aritmética (sem sazonalidade): **R$ 336.000**, **não** uma economia efetivamente realizada.
+| Resultado esperado | Variação em pontos percentuais |
+| --- | ---: |
+| Aumento do autosserviço | +35 p.p. |
+| Aumento de satisfação | +13 p.p. |
+| Redução do abandono | -13 p.p. |
+| Redução do encaminhamento humano | -35 p.p. |
 
-## Limitações e governança
+**Nota metodológica:** o encaminhamento humano é tratado neste cenário didático como complemento do autosserviço (100% menos autosserviço). Em uma operação real, jornadas abandonadas, casos não elegíveis e outros desfechos devem ser considerados separadamente; portanto os percentuais não necessariamente se complementam.
 
-A taxa de autosserviço só deve contar demandas efetivamente resolvidas; não basta o usuário não ter pedido atendente. CSAT pode ter viés de não resposta. A comparação antes/depois exige considerar mudanças de mix, volume e período. Não divulgar ROI sem custo total da solução e validação do financeiro.
+## Critérios propostos para o piloto
 
-## Critérios de sucesso do piloto (propostos)
+- Autosserviço em demandas elegíveis: **≥ 55%**.
+- CSAT entre respostas válidas: **≥ 85%**.
+- Abandono da jornada: **≤ 15%**.
+- Encaminhamento humano: **≤ 45%**, observados os critérios de elegibilidade.
+- Privacidade, autorização e qualidade do atendimento validadas pelas áreas responsáveis.
 
-- Taxa de resolução automática ≥ 55% entre jornadas elegíveis.
-- CSAT ≥ 85% nas respostas válidas.
-- Abandono ≤ 15%.
-- Nenhum vazamento conhecido de dados protegidos e auditoria de acessos implementada.
-- Quedas de serviços gerenciadas com transbordo e aviso compreensível.
+## Cuidados na interpretação
+
+Medir o desempenho por jornada e público (cliente/corretor), mantendo as mesmas regras de elegibilidade e janelas comparáveis. Um contato não direcionado ao atendente **não é automaticamente uma demanda resolvida**. A melhoria dos índices deverá ser comprovada em teste piloto antes de ser apresentada como resultado real.
