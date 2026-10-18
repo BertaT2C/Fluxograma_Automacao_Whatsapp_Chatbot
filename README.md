@@ -20,7 +20,7 @@
 | --- | --- | --- |
 | Facilitar autosserviço | Menos esforço para obter informações | Taxa de resolução sem agente |
 | Diminuir espera | Resposta inicial rápida | Tempo da primeira resposta |
-| Otimizar operação | Menos contatos repetitivos direcionados a agentes | Volume e custo por atendimento |
+| Otimizar operação | Menos demandas repetitivas direcionadas a agentes | Percentual de encaminhamento ao atendimento humano |
 | Melhorar experiência | Jornadas simples e consistentes | CSAT após encerramento |
 | Aumentar rastreabilidade | Melhor análise de gargalos e falhas | Logs de etapas e taxa de abandono |
 | Preservar segurança | Reduzir exposição de dados sensíveis | Auditoria de acessos e consentimento |
@@ -83,26 +83,27 @@ Exemplo:
 
 ## 6. Painel de indicadores — SIMULAÇÃO
 
-**Cenário inventado para apresentação do projeto:** comparação de uma linha de base hipotética com metas de um piloto futuro. **Não são medições de uma seguradora.**
+**Indicadores percentuais, integralmente fictícios:** comparação de uma situação inicial hipotética com metas hipotéticas para um MVP. **Não representam resultados medidos nem ganhos comprovados de qualquer empresa.**
 
-| Indicador | Linha de base simulada | Meta simulada do MVP | Interpretação |
+| Indicador | Cenário inicial simulado | Meta simulada do MVP | Evolução projetada |
 | --- | ---: | ---: | --- |
-| Contatos mensais | 10.000 | 10.000 | Volume constante para comparação |
-| Resolução no autosserviço | 20% | 55% | +35 pontos percentuais |
-| Tempo médio de primeira resposta | 8 min | 20 s | Aceleração estimada |
-| CSAT | 72% | 85% | +13 pontos percentuais |
+| Resolução por autosserviço | 20% | 55% | +35 pontos percentuais |
+| Satisfação do usuário (CSAT) | 72% | 85% | +13 pontos percentuais |
 | Abandono da jornada | 28% | 15% | -13 pontos percentuais |
-| Contatos direcionados ao humano | 8.000 | 4.500 | -3.500/mês (cenário simplificado) |
+| Encaminhamento para atendimento humano | 80% | 45% | -35 pontos percentuais |
 
-### Exemplo didático de benefício financeiro
+### Benefícios operacionais esperados — leitura percentual
 
-Se **3.500 atendimentos por mês** fossem evitados e o custo médio **hipotético** de um atendimento humano fosse **R$ 8,00**, o benefício bruto potencial seria:
+- **+35 pontos percentuais** na resolução por autosserviço, caso a meta hipotética seja atingida.
+- **-35 pontos percentuais** de encaminhamentos humanos, por complemento da taxa de resolução automática neste cenário simplificado.
+- **+13 pontos percentuais** de satisfação (CSAT).
+- **-13 pontos percentuais** de abandono da jornada.
 
-**3.500 × R$ 8,00 = R$ 28.000/mês**, antes dos custos de plataforma, desenvolvimento, licenças, manutenção, integrações e atendimento residual. **Não representa economia real comprovada.** A análise correta de ROI deve considerar custos totais, sazonalidade, demanda induzida e qualidade do serviço.
+A melhoria dos percentuais representa **hipóteses de evolução**, sujeitas à validação em piloto com dados reais. Indicadores de qualidade, acessibilidade, conformidade e segurança devem acompanhar a análise para evitar conclusões baseadas apenas em percentuais.
 
-![Indicadores simulados do projeto](docs/painel-indicadores.svg)
+![Indicadores percentuais simulados do projeto](docs/painel-indicadores.svg)
 
-Detalhamento: [dicionário de métricas e fórmulas](docs/indicadores-simulados.md).
+Detalhamento: [definições, fórmulas e critérios de mensuração](docs/indicadores-simulados.md).
 
 ## 7. Como medir corretamente em um piloto real
 
