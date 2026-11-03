@@ -1,5 +1,25 @@
 # Case de Portfólio | Automação de atendimento pelo WhatsApp
 
+## Da dor do usuário ao autosserviço — passo a passo do estudo de caso
+
+Esta síntese organiza o material existente em uma narrativa de negócio: do problema identificado aos artefatos, entregas e à forma de avaliar valor.
+
+| Etapa | Processo, decisão e evidência |
+| --- | --- |
+| **Desafio** | O WhatsApp já recebe demandas, mas serviços exigem portal ou atendimento humano. |
+| **Discovery** | Identificação de pontos de abandono, trocas de canal, solicitações frequentes e requisitos de segurança. |
+| **AS IS** | Corretor inicia no WhatsApp, escolhe assunto e recebe link ou atendimento externo. |
+| **TO BE** | Proposta de consultas elegíveis na conversa, mediante autenticação e integração autorizada. |
+| **MVP e backlog** | Menu, classificação, transbordo; HU-01 a HU-04 e critérios de aceite. |
+| **Indicadores** | Cenários ilustrativos de autosserviço, CSAT, abandono e encaminhamento humano. |
+| **Validação futura** | Piloto, instrumentação, segurança LGPD e análise de taxas reais. |
+
+**Documentação e materiais:** [Backlog e critérios de aceite](./docs/backlog-ilustrativo.md) · [Indicadores simulados](./docs/indicadores-simulados.md) · [Página do case](https://bertat2c.github.io/whatsapp.html).
+
+**Interpretação do case:** O repositório descreve uma proposta funcional de estudo de caso, não um chatbot implementado. Indicadores percentuais são simulados.
+
+---
+
 **Análise de Negócios • Descoberta de processos • Jornada do usuário • Requisitos • Indicadores**
 
 > **PROJETO DEMONSTRATIVO — DADOS FICTÍCIOS.** Este estudo de caso foi estruturado para demonstrar competências profissionais. Os indicadores, volumes, metas e resultados abaixo são **simulações**, não números obtidos em produção nem resultados comprovados de cliente. Não se trata de implantação em ambiente real.
